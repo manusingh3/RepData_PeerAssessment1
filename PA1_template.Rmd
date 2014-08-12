@@ -116,7 +116,7 @@ mean(newdata$steps)
 ```{r}
 median(newdata$steps)
 
-ggplot(newdata, aes(x=steps))+geom_histogram(colour="black", fill="white")
+ggplot(newdata, aes(x=steps))+geom_histogram(colour="black", fill="blue")
 ```
 We can see that the values are approximately normal distributed and that the distribution with the imputed values is slightly sharper. This is result of an increased density around the mean value, because we replaced 2304 missing values with the mean value of the original data. By doing that we didn't change the general truth about the data, or in other words we did not introduce a shift on the x-axis of the whole distribution. However we implicitly added certainty, that the model, constructed by our sample, is correctly distributed around this mean.
 

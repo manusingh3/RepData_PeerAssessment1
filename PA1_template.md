@@ -175,7 +175,7 @@ median(newdata$steps)
 ```
 
 ```r
-ggplot(newdata, aes(x=steps))+geom_histogram(colour="black", fill="white")
+ggplot(newdata, aes(x=steps))+geom_histogram(colour="black", fill="blue")
 ```
 
 ```
